@@ -1,0 +1,41 @@
+.portfolio-sidebar-list-wrapper {
+    .portfolio-item-thumb {
+        padding: 20px;
+        .portfolio-thumb-image img {
+            width: 100%;
+        }
+    }
+
+    .text-content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .title {
+            color: $off-white;
+            font-size: 1.5em;
+        }
+        .actions {
+            display:grid;
+            grid-template-columns: 1fr 1fr;
+            grid-gap: 15px;
+            .action-icon {
+                cursor: pointer;
+                color: $off-white;
+                font-size: 1.5em;
+            }
+            .red-hover {
+                transition: 0.5s ease-in-out;
+                &:hover {
+                    color: $warning;
+                }
+            }
+            .teal-hover {
+                transition: 0.5s ease-in-out;
+                &:hover {
+                    color: $dark-teal;
+                }
+            }
+        }
+    }
+}

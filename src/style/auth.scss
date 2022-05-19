@@ -1,0 +1,25 @@
+.auth-form {
+    @include input-element();
+    @include base-grid();
+    grid-gap: 20px;
+    .form-group {
+        display: flex;
+        svg {
+            margin-top: 7px;
+            font-size: 1.2em;
+            color: $teal;
+            margin-right: 15px;
+        }
+    }
+    .btn-long {
+        @include base-btn();
+        border-radius: 4px;
+    }
+}
+
+.auth-error-text {
+    display: flex;
+    justify-content: center;
+    font-size: 1em;
+    color: $warning;
+}

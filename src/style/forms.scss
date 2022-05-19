@@ -1,0 +1,53 @@
+textarea {
+    border: 2px solid $teal;
+    background-color: transparent;
+    font-size: 1rem;
+    height: 100px;
+    outline: none;
+    padding: 10px;
+    font-family: 'Cormorant Garamond', serif;
+    transition: 0.5s ease-in-out;
+    &:focus {
+        border: 2px solid $dark-teal;
+    }
+}
+
+.select-element {
+    border: 1px solid #ccc;
+    font-size: 0.8rem;
+    width: 100%;
+    border-radius: 3px;
+    overflow: hidden;
+    background-color: transparent;
+    outline: none;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1rem;
+}
+
+.dz-remove {
+    text-decoration: none;
+    color: $charcol;
+    font-family: 'Cormorant Garamond', serif;
+    transition: 0.5s;
+    margin-top: 10px;
+    &:hover {
+        color: black;
+        border-bottom: 1px solid black;
+    }
+}
+
+.dropzone .dz-preview.dz-image-preview {
+    background: transparent;
+}
+
+.dz-details {
+    .dz-size {
+        color: $charcol;
+        font-family: 'Cormorant Garamond', serif;
+    }
+    .dz-filename {
+        color: $charcol;
+        font-family: 'Cormorant Garamond', serif;
+        border: none;
+    }
+}

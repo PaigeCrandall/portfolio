@@ -1,0 +1,39 @@
+.portfolio-form-wrapper {
+    grid-template-columns: 1fr;
+    padding: 42px;
+    @include base-grid();
+    
+    @include input-element();
+    input {
+        margin-bottom: 0px;
+    }
+
+    .img-uploaders {
+        @include base-grid();
+        grid-template-columns: 200px 200px 200px;
+        .image-upload-wrapper {
+            img {
+                width: 100%;
+                height: 180px;
+                object-fit: cover;
+                border-radius: 5px;
+            }
+            .img-removal-link {
+                display: flex;
+                justify-content: center;
+                border-bottom: 1px solid transparent;
+                a {
+                    font-weight: 900;
+                    font-family: 'Cormorant Garamond', serif;
+                    color: $warning;
+                    cursor: pointer;
+                    transition: 0.5s ease-in-out;
+                    &:hover {
+                        border-bottom: 1px solid black;
+                        color: black;
+                    }
+                }
+            }
+        }
+    }
+}

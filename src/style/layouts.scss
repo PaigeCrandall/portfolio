@@ -1,0 +1,45 @@
+.common-page-wrapper {
+    width: 100vw;
+    height: calc(100vh - 84px);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    .left-column {
+        background-size: cover;
+    }
+    .right-column {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding-right: 100px;
+        padding-left: 100px;
+        background-color: $off-white;
+
+        .layout-heading {
+            font-family: 'Beau Rivage', cursive;
+            color: $dark-teal;
+            font-size: 2em;
+        }
+
+        .layout-paragraph {
+            color: $charcol;
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.1em;
+        }
+
+        .contact-item {
+            display: flex;
+            margin-bottom: 20px;
+            margin-top: 20px;
+            .contact-icon {
+                font-size: 1.5em;
+                color: $dark-teal;
+            }
+            .info {
+                margin-left: 20px;
+                font-size: 1.5em;
+                color: $charcol;
+            }
+        }
+    }
+}
